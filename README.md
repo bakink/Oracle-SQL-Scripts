@@ -43,11 +43,24 @@
 </pre>
 <h3> AWR Trend: </h3>
 <pre>
-<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_dbtime.sql">acquire_dbtime.sql</a> - Acquiring DB time from the historical AWR Report
-<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_io_mbps.sql">acquire_io_mbps.sql</a> - Acquiring IO Mbps from the historical AWR Report
-<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_iops.sql">acquire_iops.sql</a> - Acquiring IOPS from the historical AWR Report
-<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_tps.sql">acquire_tps.sql</a> - Acquiring TPS from the historical AWR Report
-<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_tps_2.sql">acquire_tps_2.sql</a> - The 2nd version of acquiring TPS from the historical AWR Report
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_aas.sql">acquire_aas.sql</a> - Acquiring Average Active Sessions (AAS) from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_aas_2.sql">acquire_aas_2.sql</a> - The 2nd version of acquiring Average Active Sessions (AAS) from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_clc.sql">acquire_clc.sql</a> - Acquiring Current Logons Count from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_cpu_load.sql">acquire_cpu_load.sql</a> - Acquiring CPU Load from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_cpu_load_2.sql">acquire_cpu_load_2.sql</a> - The 2nd version of acquiring CPU Load from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_cpu_usage.sql">acquire_cpu_usage.sql</a> - Acquiring CPU Usage from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_dbtime.sql">acquire_dbtime.sql</a> - Acquiring DB time from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_dbtime_2.sql">acquire_dbtime_2.sql</a> - The 2nd version of acquiring DB time from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_io_mbps.sql">acquire_io_mbps.sql</a> - Acquiring IO MBPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_io_mbps_2.sql">acquire_io_mbps_2.sql</a> - The 2nd version of acquiring IO MBPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_iops.sql">acquire_iops.sql</a> - Acquiring IOPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_iops_2.sql">acquire_iops_2.sql</a> - The 2nd version of acquiring IOPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_lps.sql">acquire_lps.sql</a> - Acquiring Logons Per Second from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_network_mbps.sql">acquire_network_mbps.sql</a> - Acquiring Network MBPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_redo_gen_mbps.sql">acquire_redo_gen_mbps.sql</a> - Acquiring Redo Generated MBPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_rwps.sql">acquire_rwps.sql</a> - Acquiring Redo Writes Per Second from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_tps.sql">acquire_tps.sql</a> - Acquiring TPS from the historical AWR reports
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/awr_trend/acquire_tps_2.sql">acquire_tps_2.sql</a> - The 2nd version of acquiring TPS from the historical AWR reports
 </pre>
 <h3> Capacity Planning: </h3>
 <pre>
@@ -119,6 +132,23 @@
 <a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/plsql/brst_scheduler.sql">brst_scheduler.sql</a> - Creating a user-defined job 'BRST_JOB' on schema SZD_BBS_V2, the primary intention is it could regularly/periodically execute my procedure 'brgs_role_syn_tab' on schema SZD_BBS_V2
 <a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/plsql/rgy_refresh_mview_uts.sql">rgy_refresh_mview_uts.sql</a> Regularly refreshing MView "u_tables" created by procedure "brgs_role_syn_tab_3" from the SQL script "brgs_role_syn_tab_3.sql"
 <a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/plsql/switch_redo_log_for_recycle.sql">switch_redo_log_for_recycle.sql</a> - Switching all of online redo log for a recycle on oracle database
+</pre>
+<h3> Recent Metrics: </h3>
+<pre>
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_aas.sql">acquire_recent_aas.sql</a> - Acquiring the recent Average Active Sessions (AAS) from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_clc.sql">acquire_recent_clc.sql</a> - Acquiring the recent Current Logons Count (CLC) from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_cpu_load.sql">acquire_recent_cpu_load.sql</a> - Acquiring the recent CPU Load from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_cpu_usage.sql">acquire_recent_cpu_usage.sql</a> - Acquiring the recent CPU Usage from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_dbcpu_time_ratio.sql">acquire_recent_dbcpu_time_ratio.sql</a> - Acquiring the recent Database CPU Time Ratio from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_dbtime.sql">acquire_recent_dbtime.sql</a> - Acquiring the recent Database Time from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_dbwait_time_ratio.sql">acquire_recent_dbwait_time_ratio.sql</a> - Acquiring the recent Database Wait Time Ratio from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_io_mbps.sql">acquire_recent_io_mbps.sql</a> - Acquiring the recent IO MBPS from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_iops.sql">acquire_recent_iops.sql</a> - Acquiring the recent IO(Requests)PS from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_lps.sql">acquire_recent_lps.sql</a> - Acquiring the recent Logons Per Second (LPS) from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_network_mbps.sql">acquire_recent_network_mbps.sql</a> - Acquiring the recent Network MBPS from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_redo_gen_mbps.sql">acquire_recent_redo_gen_mbps.sql</a> - Acquiring the recent Redo Generated MBPS from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_rwps.sql">acquire_recent_rwps.sql</a> - Acquiring the recent Redo Writes Per Second (RWPS) from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
+<a href="https://github.com/guestart/Oracle-SQL-Scripts/blob/master/recent_metrics/acquire_recent_tps.sql">acquire_recent_tps.sql</a> - Acquiring the recent Transactions Per Second (TPS) from the Oracle DPV v$sysmetric_history and v$sysmetric_summary
 </pre>
 <h3> Revoke: </h3>
 <pre>
